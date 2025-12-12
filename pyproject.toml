@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "transmission-evals"
+version = "0.1.0"
+description = "RL Environment for Transmission (C++) using HUD Framework"
+requires-python = ">=3.11"
+dependencies = [
+    # --- HUD Framework Core ---
+    "mcp>=1.0.0",
+    "fastmcp>=0.1.0",
+    "anthropic>=0.39.0",
+    "pydantic>=2.0.0",
+    "httpx>=0.24.0",
+    "click>=8.0.0",
+    
+    # --- Transmission/Task Specific ---
+    "packaging>=23.0",
+    "junitparser>=3.1.0",
+    "docker>=7.0.0",
+    "gymnasium>=0.29.0",
+    "numpy>=1.24.0",
+    "gitpython>=3.1.0"
+]
+
+[project.scripts]
+hud_eval = "hud_controller.app:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hud_controller"]

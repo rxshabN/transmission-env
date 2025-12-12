@@ -1,0 +1,2381 @@
+[
+  {
+    "task_id": "transmission-05aef3e",
+    "buggy_commit": "030b22f91cc3bb76b8b8f26b30aacd3b828b6cf6",
+    "golden_commit": "05aef3e78799456cf608d940f5e8f5deddd22772",
+    "message": "refactor: unify quarks and strings to snake_case (#7108)",
+    "files": [
+      "cli/cli.cc",
+      "docs/Blocklists.md",
+      "docs/Editing-Configuration-Files.md",
+      "docs/Headless-Usage.md",
+      "docs/Transmission-Resume-Files.md",
+      "docs/rpc-spec.md",
+      "gtk/Actions.cc",
+      "gtk/DetailsDialog.cc",
+      "gtk/PrefsDialog.cc",
+      "gtk/Session.cc",
+      "gtk/transmission-ui.xml",
+      "libtransmission/quark.cc",
+      "libtransmission/quark.h",
+      "libtransmission/resume.cc",
+      "libtransmission/rpc-server.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/session.cc",
+      "libtransmission/session.h",
+      "libtransmission/stats.cc",
+      "libtransmission/transmission.h",
+      "libtransmission/variant.cc",
+      "libtransmission/variant.h",
+      "news/news-5.0.0-draft.md",
+      "qt/DetailsDialog.cc",
+      "qt/FreeSpaceLabel.cc",
+      "qt/OptionsDialog.cc",
+      "qt/Prefs.cc",
+      "qt/PrefsDialog.cc",
+      "qt/Session.cc",
+      "qt/Torrent.cc",
+      "qt/VariantHelpers.cc",
+      "tests/libtransmission/completion-test.cc",
+      "tests/libtransmission/json-test.cc",
+      "tests/libtransmission/rpc-test.cc",
+      "utils/remote.cc",
+      "web/src/file-row.js",
+      "web/src/inspector.js",
+      "web/src/open-dialog.js",
+      "web/src/prefs-dialog.js",
+      "web/src/remote.js",
+      "web/src/statistics-dialog.js",
+      "web/src/torrent.js",
+      "web/src/transmission.js"
+    ]
+  },
+  {
+    "task_id": "transmission-25d2ebf",
+    "buggy_commit": "40e1bd660dddaba03bf071e5ce4d141e800e7ec4",
+    "golden_commit": "25d2ebf8fc7677b2b4f65390a9169cc94a2eeb37",
+    "message": "refactor: overhaul `tr_address` special address checks (#7818)",
+    "files": [
+      "libtransmission/announcer-udp.cc",
+      "libtransmission/ip-cache.cc",
+      "libtransmission/net.cc",
+      "libtransmission/net.h",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/session.cc",
+      "libtransmission/tr-udp.cc",
+      "tests/libtransmission/ip-cache-test.cc",
+      "tests/libtransmission/net-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-4318a6f",
+    "buggy_commit": "8d25484cdbc131f2a47db704b82ef9a8ec98cea7",
+    "golden_commit": "4318a6f1ac1eda1cbaae9472d76b6119503dbf8a",
+    "message": "fix: caching a source address doesn't imply public internet connectivity (#7520)",
+    "files": [
+      "libtransmission/ip-cache.cc",
+      "libtransmission/ip-cache.h",
+      "libtransmission/net.h",
+      "libtransmission/session.cc",
+      "libtransmission/session.h",
+      "libtransmission/tr-udp.cc",
+      "tests/libtransmission/ip-cache-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-41dd2cf",
+    "buggy_commit": "f26eca5fd5706ffb7d93a4a6dc48a48fb0d321ad",
+    "golden_commit": "41dd2cfd530e9eba666485709f20b91be46f64ee",
+    "message": "fix: accept either one of udp announce response (#7583)",
+    "files": [
+      "libtransmission/announcer-common.h",
+      "libtransmission/announcer-udp.cc",
+      "tests/libtransmission/announcer-udp-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-e7d4a69",
+    "buggy_commit": "c4dc244212f7b55a1865ff2e263f81458f490544",
+    "golden_commit": "e7d4a69107059eef19225300af309e81abdd992b",
+    "message": "fix: update wishlist when files wanted changed (#7733)",
+    "files": [
+      "libtransmission/peer-mgr-wishlist.cc",
+      "libtransmission/peer-mgr-wishlist.h",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/torrent.h",
+      "tests/libtransmission/peer-mgr-wishlist-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-bf5507f",
+    "buggy_commit": "d0c26cc6123bad38d5e175c2503017fead6e03f5",
+    "golden_commit": "bf5507ff2411ede230af098eac1fb0dd0d994262",
+    "message": "fix: load `.torrent` then `.magnet` (#7585)",
+    "files": [
+      "libtransmission/session.cc",
+      "tests/libtransmission/assets/archlinux-2025.05.01-x86_64.iso.magnet",
+      "tests/libtransmission/assets/archlinux-2025.05.01-x86_64.iso.torrent",
+      "tests/libtransmission/session-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-9e15394",
+    "buggy_commit": "03c2dbd63ccdf3e9051f98b6d0d6ded2adc803f8",
+    "golden_commit": "9e15394c65ecddf1b15f7225fa7a4fa29e302505",
+    "message": "refactor: announcer code housekeeping (#7496)",
+    "files": [
+      "libtransmission/announcer-common.h",
+      "libtransmission/announcer-http.cc",
+      "libtransmission/announcer-udp.cc",
+      "libtransmission/announcer.cc",
+      "tests/libtransmission/announcer-test.cc",
+      "tests/libtransmission/announcer-udp-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-76d854d",
+    "buggy_commit": "7e87adcd918c7de8fbb0b6df9bb5399e45b5196c",
+    "golden_commit": "76d854dcc89f1fec252e678dc09ec73c4d776f24",
+    "message": "fix: clang-tidy-20 warnings (#7479)",
+    "files": [
+      "libtransmission/file-posix.cc",
+      "qt/.clang-tidy",
+      "qt/Application.cc",
+      "tests/libtransmission/.clang-tidy",
+      "tests/libtransmission/block-info-test.cc",
+      "tests/libtransmission/completion-test.cc",
+      "tests/libtransmission/dht-test.cc",
+      "tests/libtransmission/file-piece-map-test.cc",
+      "tests/libtransmission/ip-cache-test.cc",
+      "tests/libtransmission/session-test.cc",
+      "tests/libtransmission/subprocess-test.cc",
+      "tests/libtransmission/timer-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-088232f",
+    "buggy_commit": "1232f558a635766f697bf08c81f90cefae2504e0",
+    "golden_commit": "088232f69cbfbc6cef9fd18291f04d5c2aa5d5f4",
+    "message": "fix: abort handshake if the torrent is stopped (#6947)",
+    "files": [
+      "libtransmission/handshake.cc",
+      "libtransmission/handshake.h",
+      "libtransmission/peer-mgr.cc",
+      "tests/libtransmission/handshake-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-47eb4ee",
+    "buggy_commit": "4e7fc8197586c1edc44f9a9f3177c755fcbfdd6b",
+    "golden_commit": "47eb4ee2bcadaf760b6aabe175f56e137a5531b1",
+    "message": "refactor: dedicated class for torrent queue (#7332)",
+    "files": [
+      "Transmission.xcodeproj/project.pbxproj",
+      "libtransmission/CMakeLists.txt",
+      "libtransmission/quark.cc",
+      "libtransmission/quark.h",
+      "libtransmission/resume.cc",
+      "libtransmission/resume.h",
+      "libtransmission/session.cc",
+      "libtransmission/session.h",
+      "libtransmission/torrent-metainfo.cc",
+      "libtransmission/torrent-metainfo.h",
+      "libtransmission/torrent-queue.cc",
+      "libtransmission/torrent-queue.h",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "tests/libtransmission/CMakeLists.txt",
+      "tests/libtransmission/torrent-queue-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-cbd65ae",
+    "buggy_commit": "de782e43153489f21f7b2686cec4519ae2af4412",
+    "golden_commit": "cbd65ae8b1f16ac639e725aa40751fb894cebaa9",
+    "message": "refactor: fix modernize-use-nodiscard warnings by adding [[nodiscard]] (#7351)",
+    "files": [
+      "libtransmission/benc.h",
+      "qt/AddData.h",
+      "qt/DBusInteropHelper.h",
+      "qt/FileTreeDelegate.h",
+      "qt/FileTreeModel.h",
+      "qt/FileTreeView.h",
+      "qt/FilterBarComboBox.h",
+      "qt/FilterBarComboBoxDelegate.h",
+      "qt/Filters.h",
+      "qt/IconToolButton.h",
+      "qt/InteropHelper.h",
+      "qt/InteropObject.h",
+      "qt/MainWindow.h",
+      "qt/MakeDialog.h",
+      "qt/PathButton.h",
+      "qt/Torrent.h",
+      "qt/TorrentFilter.h",
+      "qt/TrackerDelegate.h",
+      "qt/TrackerModel.h",
+      "qt/TrackerModelFilter.h",
+      "qt/WatchDir.h",
+      "tests/libtransmission/test-fixtures.h"
+    ]
+  },
+  {
+    "task_id": "transmission-50eacf6",
+    "buggy_commit": "cbba2e0390e6972fdc14eb95ef0e28f485aa4112",
+    "golden_commit": "50eacf693365e96306db15a932ea5f8d70ad69ba",
+    "message": "Consume early pad a/b, improve handshake tests (#6987)",
+    "files": [
+      "libtransmission/handshake.cc",
+      "libtransmission/handshake.h",
+      "tests/libtransmission/handshake-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-60e5d98",
+    "buggy_commit": "affb03a8d2c7393b54542439c9c5dcfb4ded01ae",
+    "golden_commit": "60e5d98dc1fc4c40e817eb6c0fa6baa34c6be93e",
+    "message": "fix: handle nullptr in json serde (#7258)",
+    "files": [
+      "libtransmission/variant-json.cc",
+      "tests/libtransmission/json-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-affb03a",
+    "buggy_commit": "43f5ca8e0c15c5c9e80326835bf02524b5eace48",
+    "golden_commit": "affb03a8d2c7393b54542439c9c5dcfb4ded01ae",
+    "message": "refactor: remove `tr_torrent::do_magnet_idle_work()` (#7271)",
+    "files": [
+      "libtransmission/torrent-magnet.cc",
+      "libtransmission/torrent-magnet.h",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "tests/libtransmission/torrent-magnet-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-7e4b4f1",
+    "buggy_commit": "198ee5bd97acd62fcbc62bb8e765b761667c0532",
+    "golden_commit": "7e4b4f10a1f90885c0bebb168eedffe153f1cf53",
+    "message": "refactor: faster wishlist (#7027)",
+    "files": [
+      "Transmission.xcodeproj/project.pbxproj",
+      "libtransmission/CMakeLists.txt",
+      "libtransmission/peer-common.h",
+      "libtransmission/peer-io.cc",
+      "libtransmission/peer-io.h",
+      "libtransmission/peer-mgr-active-requests.cc",
+      "libtransmission/peer-mgr-active-requests.h",
+      "libtransmission/peer-mgr-wishlist.cc",
+      "libtransmission/peer-mgr-wishlist.h",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/peer-mgr.h",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/torrent.h",
+      "libtransmission/webseed.cc",
+      "tests/libtransmission/CMakeLists.txt",
+      "tests/libtransmission/peer-mgr-active-requests-test.cc",
+      "tests/libtransmission/peer-mgr-wishlist-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-3e5a77d",
+    "buggy_commit": "10333d23b21422e1e8e8e92bc74ad5b491b2dccd",
+    "golden_commit": "3e5a77d17603dd6548add3c5b233a4e87d38c577",
+    "message": "refactor: remove last byte special case in `tr_block_info::byte_loc()` (#7064)",
+    "files": [
+      "libtransmission/block-info.h",
+      "libtransmission/file-piece-map.cc",
+      "libtransmission/torrent.cc",
+      "tests/libtransmission/file-piece-map-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-9fc9daf",
+    "buggy_commit": "abfd39065c39e955dedd1a74ebbe03fe5d0ea45d",
+    "golden_commit": "9fc9daf40dc671d6215a9b254abadcbfdf4f00b4",
+    "message": "Fails with an error if data removal was not possible (#6055)",
+    "files": [
+      "gtk/OptionsDialog.cc",
+      "gtk/Session.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/torrent-files.cc",
+      "libtransmission/torrent-files.h",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "libtransmission/transmission.h",
+      "libtransmission/utils.cc",
+      "libtransmission/utils.h",
+      "macosx/Torrent.mm",
+      "tests/libtransmission/move-test.cc",
+      "tests/libtransmission/rename-test.cc",
+      "tests/libtransmission/rpc-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-fa8be1b",
+    "buggy_commit": "c21ee87eea24eadaf4acd3eb58c837bad223018d",
+    "golden_commit": "fa8be1b9817f1f649c6becc5c6bea8190df4c0ff",
+    "message": "fix: `tr_variant_serde::parse_json()` bug fixes (#6901)",
+    "files": [
+      "libtransmission/variant-json.cc",
+      "tests/libtransmission/variant-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-2c2011d",
+    "buggy_commit": "acee39e15cae8cff0ab398ade9098baf6dedbf59",
+    "golden_commit": "2c2011d40f36e4fbc1ed487b7a5ebd42097bb9a1",
+    "message": "fix: update partial file suffix after verifying torrent (#6871)",
+    "files": [
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "tests/libtransmission/move-test.cc",
+      "tests/libtransmission/rename-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-9748f42",
+    "buggy_commit": "adc405e5bebd5026b9e8b7e2c7ceaebdd470e5eb",
+    "golden_commit": "9748f42c5a18dcd3119bcdb1ab30b4e9479cd11b",
+    "message": "fix: restore portable file path check (#6853)",
+    "files": [
+      "libtransmission/makemeta.cc",
+      "libtransmission/makemeta.h",
+      "libtransmission/resume.cc",
+      "libtransmission/torrent-files.cc",
+      "libtransmission/torrent-files.h",
+      "libtransmission/torrent-metainfo.cc",
+      "libtransmission/torrent-metainfo.h",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "macosx/QuickLookPlugin/GeneratePreviewForURL.mm",
+      "tests/libtransmission/makemeta-test.cc",
+      "tests/libtransmission/remove-test.cc",
+      "tests/libtransmission/torrent-files-test.cc",
+      "utils/create.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-09b67c8",
+    "buggy_commit": "740ce3b904b78cf4bec120ebb5a1cfd326375a87",
+    "golden_commit": "09b67c84b1f17ed22b7cce0731867e0029c62fbe",
+    "message": "fix: possible heap-use-after-free with magnet links (#6815)",
+    "files": [
+      "libtransmission/torrent-magnet.cc",
+      "libtransmission/torrent-magnet.h",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "tests/libtransmission/torrent-magnet-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-d935d36",
+    "buggy_commit": "8944e587f9cf3ac0eebeff68274385674b9a42d5",
+    "golden_commit": "d935d364ed12ec5afe9f1253deb209ad35804e85",
+    "message": "refactor: remove torrent_view virtual class (#6738)",
+    "files": [
+      "libtransmission/completion.cc",
+      "libtransmission/completion.h",
+      "libtransmission/torrent.h",
+      "tests/libtransmission/completion-test.cc",
+      "tests/libtransmission/lpd-test.cc",
+      "tests/libtransmission/watchdir-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-2ff3ae0",
+    "buggy_commit": "29173741592ed33df315c5b10203a49cf2544f99",
+    "golden_commit": "2ff3ae07d1ac0ae9bfa48229b8e5d0bce1446fde",
+    "message": "fix: more misc `net.cc` fixes (#6735)",
+    "files": [
+      "libtransmission/net.cc",
+      "libtransmission/tr-udp.cc",
+      "libtransmission/web-utils.cc",
+      "tests/libtransmission/announcer-test.cc",
+      "tests/libtransmission/net-test.cc",
+      "tests/libtransmission/web-utils-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-152f3e9",
+    "buggy_commit": "8709ec60e69a31367da325e17463714aa5a5d2f3",
+    "golden_commit": "152f3e91a560213d2355a6dc08865ef068c2b434",
+    "message": "refactor: convert `tr_peerMsgsImpl` helper functions to class methods (#6580)",
+    "files": [
+      "libtransmission/handshake.cc",
+      "libtransmission/magnet-metainfo.cc",
+      "libtransmission/net.cc",
+      "libtransmission/net.h",
+      "libtransmission/peer-common.h",
+      "libtransmission/peer-mgr-active-requests.cc",
+      "libtransmission/peer-mgr-active-requests.h",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/peer-mgr.h",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/peer-msgs.h",
+      "libtransmission/torrent-metainfo.cc",
+      "libtransmission/torrent-metainfo.h",
+      "libtransmission/webseed.cc",
+      "libtransmission/webseed.h",
+      "tests/libtransmission/completion-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-edc59ba",
+    "buggy_commit": "8e35e526c6655bd8ab6f1e3b3bc8996a0561c6c7",
+    "golden_commit": "edc59ba5d8edfb6016fad3e2da2783ef3ab0bfd3",
+    "message": "fix compatibility with clang-format 18 (#6690)",
+    "files": [
+      "libtransmission/favicon-cache.h",
+      "qt/RpcClient.cc",
+      "tests/libtransmission/dht-test.cc",
+      "tests/libtransmission/timer-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-7c11809",
+    "buggy_commit": "d362b3f0f209822b50d0db46282fdd8efe9f9e46",
+    "golden_commit": "7c118096720f10bba0eefe570a58111eaa91b3b1",
+    "message": "fix: more clang-tidy warnings (#6608)",
+    "files": [
+      "gtk/.clang-tidy",
+      "gtk/DetailsDialog.cc",
+      "gtk/DynamicPropertyStore.h",
+      "gtk/FilterBar.cc",
+      "gtk/FilterListModel.hh",
+      "gtk/HigWorkarea.h",
+      "gtk/MessageLogWindow.cc",
+      "gtk/PrefsDialog.h",
+      "gtk/Session.cc",
+      "gtk/StatsDialog.cc",
+      "gtk/Torrent.cc",
+      "gtk/Utils.h",
+      "qt/Application.cc",
+      "qt/DetailsDialog.cc",
+      "qt/FileTreeItem.cc",
+      "qt/FileTreeView.cc",
+      "qt/FilterBar.cc",
+      "qt/InteropObject.cc",
+      "qt/MakeDialog.cc",
+      "qt/Prefs.cc",
+      "qt/PrefsDialog.cc",
+      "qt/Session.cc",
+      "qt/Torrent.cc",
+      "qt/TorrentFilter.cc",
+      "qt/TrackerDelegate.cc",
+      "qt/VariantHelpers.cc",
+      "tests/libtransmission/handshake-test.cc",
+      "tests/libtransmission/move-test.cc",
+      "tests/libtransmission/torrent-magnet-test.cc",
+      "tests/libtransmission/variant-test.cc",
+      "tests/libtransmission/watchdir-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-ca11c33",
+    "buggy_commit": "1c71ba5c838c9f1c55cf28a279a866df26227ea7",
+    "golden_commit": "ca11c33d0510cf6d870e47cd5ef6812135e97ea2",
+    "message": "fix: various DHT bugs (#6569)",
+    "files": [
+      "docs/Editing-Configuration-Files.md",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/session-settings.h",
+      "libtransmission/session.h",
+      "libtransmission/tr-dht.cc",
+      "libtransmission/tr-dht.h",
+      "tests/libtransmission/dht-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-468de87",
+    "buggy_commit": "e408aa074122f8f77ddf952d0925c6bf7e141721",
+    "golden_commit": "468de87076c3c1fc4cd46026051b2380488b6775",
+    "message": "refactor: fix cppcoreguidelines-avoid-do-while warnings (#6527)",
+    "files": [
+      "gtk/.clang-tidy",
+      "gtk/FileList.cc",
+      "libtransmission/file-posix.cc",
+      "libtransmission/subprocess-posix.cc",
+      "qt/.clang-tidy",
+      "tests/libtransmission/.clang-tidy",
+      "tests/libtransmission/bitfield-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-2394789",
+    "buggy_commit": "9d433ff8b4f2f79c5eb4f01804c7efc2d363888b",
+    "golden_commit": "239478925f3a6a20dda7f0c3f4a317e8ae15a7f5",
+    "message": "fix: performance-enum-size warnings (#6504)",
+    "files": [
+      "gtk/FileList.cc",
+      "gtk/FilterBar.cc",
+      "gtk/FilterBase.h",
+      "gtk/ListModelAdapter.h",
+      "gtk/Session.h",
+      "gtk/SorterBase.h",
+      "gtk/Torrent.h",
+      "gtk/TorrentFilter.h",
+      "gtk/Utils.h",
+      "libtransmission/announcer-udp.cc",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/port-forwarding-upnp.cc",
+      "libtransmission/rpc-server.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/torrent-metainfo.cc",
+      "libtransmission/tr-dht.cc",
+      "tests/libtransmission/watchdir-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-9d433ff",
+    "buggy_commit": "8d4dcece890f89769dc6ed8819937ad68f6240b3",
+    "golden_commit": "9d433ff8b4f2f79c5eb4f01804c7efc2d363888b",
+    "message": "fix: misc-include-cleaner clang-tidy warnings (#6502)",
+    "files": [
+      "gtk/.clang-tidy",
+      "gtk/Actions.cc",
+      "gtk/Application.cc",
+      "gtk/FileList.cc",
+      "gtk/MessageLogWindow.cc",
+      "gtk/PathButton.cc",
+      "gtk/Percents.cc",
+      "gtk/PrefsDialog.cc",
+      "gtk/Session.cc",
+      "gtk/TorrentCellRenderer.cc",
+      "gtk/Utils.cc",
+      "libtransmission/.clang-tidy",
+      "libtransmission/announce-list.cc",
+      "libtransmission/cache.cc",
+      "libtransmission/inout.cc",
+      "libtransmission/tr-utp.cc",
+      "qt/.clang-tidy",
+      "qt/Application.cc",
+      "qt/Formatter.cc",
+      "qt/IconCache.cc",
+      "qt/Prefs.cc",
+      "qt/Session.cc",
+      "qt/TorrentDelegateMin.cc",
+      "qt/Utils.cc",
+      "qt/VariantHelpers.cc",
+      "tests/libtransmission/.clang-tidy",
+      "tests/libtransmission/utils-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-df1dc58",
+    "buggy_commit": "4bb9eab0d062073a6fc5ba0995f2e2575250f6a0",
+    "golden_commit": "df1dc5812cd5c928570cf957d5efc69753986149",
+    "message": "fix: restore the `tag` key in RPC response (#6492)",
+    "files": [
+      "libtransmission/rpcimpl.cc",
+      "tests/libtransmission/rpc-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-22cde5d",
+    "buggy_commit": "10d047005aabd8a96c7ff5d29ff76ca00a6ba8ff",
+    "golden_commit": "22cde5d4b9ac43ac73f1309cb1021f0dd187e9f0",
+    "message": "refactor: use new tr_variant API in rpcimpl (#6456)",
+    "files": [
+      "gtk/Application.cc",
+      "gtk/DetailsDialog.cc",
+      "gtk/Session.cc",
+      "gtk/Session.h",
+      "libtransmission/rpc-server.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/rpcimpl.h",
+      "qt/RpcClient.cc",
+      "qt/RpcClient.h",
+      "tests/libtransmission/rpc-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-10d0470",
+    "buggy_commit": "5000edef0191e5dc4ea5b8dec37da11510a08c16",
+    "golden_commit": "10d047005aabd8a96c7ff5d29ff76ca00a6ba8ff",
+    "message": "refactor: convert `tr_incomplete_metadata` to c++ class (#6383)",
+    "files": [
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/torrent-magnet.cc",
+      "libtransmission/torrent-magnet.h",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "tests/libtransmission/test-fixtures.h",
+      "tests/libtransmission/torrent-magnet-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-5e51fda",
+    "buggy_commit": "0ef34878de670f068091fb2ed51556a1467ba383",
+    "golden_commit": "5e51fda92e9d3103678ac6947f99465b23795fcb",
+    "message": "refactor: remove tr_strlcpy() (#6433)",
+    "files": [
+      "Transmission.xcodeproj/project.pbxproj",
+      "libtransmission/announcer.cc",
+      "libtransmission/rpc-server.cc",
+      "libtransmission/utils.cc",
+      "libtransmission/utils.h",
+      "tests/libtransmission/utils-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-581d9c3",
+    "buggy_commit": "a9fa9430ba2566c6dc3a44129fea556b32c301c4",
+    "golden_commit": "581d9c34cc244d6b9a8f6b08cf0629ddb3a22a6f",
+    "message": "fix: gcc-13 warnings pt. 2 (#6404)",
+    "files": [
+      "gtk/FileList.cc",
+      "gtk/OptionsDialog.cc",
+      "libtransmission/net.h",
+      "libtransmission/resume.cc",
+      "libtransmission/subprocess-posix.cc",
+      "libtransmission/transmission.h",
+      "macosx/FilePriorityCell.mm",
+      "tests/gtest/CMakeLists.txt",
+      "tests/libtransmission/net-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-a494da4",
+    "buggy_commit": "33c4cd1c44da1d1979d448fe71480a60e302db82",
+    "golden_commit": "a494da4fea1b45a41fb2012a69dc4c9c0087be97",
+    "message": "fix: fill random buffer in chunks with mbedtls crypto backend (#6379)",
+    "files": [
+      "libtransmission/crypto-utils-mbedtls.cc",
+      "tests/libtransmission/crypto-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-5683751",
+    "buggy_commit": "3cd66899fe5c8434aef71e179024cf6eaa0d5691",
+    "golden_commit": "56837517b0f99031a1df1afab9d0803d51cd2d78",
+    "message": "refactor: tr_block_info cleanup (#6342)",
+    "files": [
+      "libtransmission/block-info.cc",
+      "libtransmission/block-info.h",
+      "libtransmission/file-piece-map.cc",
+      "libtransmission/file-piece-map.h",
+      "libtransmission/resume.cc",
+      "libtransmission/torrent-metainfo.cc",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "tests/libtransmission/block-info-test.cc",
+      "tests/libtransmission/file-piece-map-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-2e46bad",
+    "buggy_commit": "9e7a860b5709b532bc08d797f82958016b008b82",
+    "golden_commit": "2e46bad22d9e7c716a5cc3e9cba849356b0b4bca",
+    "message": "refactor: constify the inout module (#6328)",
+    "files": [
+      "libtransmission/cache.cc",
+      "libtransmission/cache.h",
+      "libtransmission/inout.cc",
+      "libtransmission/inout.h",
+      "libtransmission/open-files.cc",
+      "libtransmission/open-files.h",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/session-settings.h",
+      "libtransmission/session.cc",
+      "libtransmission/session.h",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "libtransmission/transmission.h",
+      "libtransmission/variant-converters.cc",
+      "tests/libtransmission/open-files-test.cc",
+      "tests/libtransmission/settings-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-36f33c0",
+    "buggy_commit": "a2e97234d245ec54b116c3f1d548c6f0aff597e1",
+    "golden_commit": "36f33c0d3036647c3c036b5000fcc538f536ab54",
+    "message": "fix: recent clang-tidy warnings (#6233)",
+    "files": [
+      "libtransmission/peer-mgr.cc",
+      "tests/libtransmission/file-piece-map-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-a952a07",
+    "buggy_commit": "4d95aa529815eecab0697510731863d3bfb95f44",
+    "golden_commit": "a952a0731f9fc1251197fcfcef5339df56c973ab",
+    "message": "refactor: remove the tr_error** idiom (#6198)",
+    "files": [
+      "cli/cli.cc",
+      "daemon/daemon-posix.cc",
+      "daemon/daemon-win32.cc",
+      "daemon/daemon.cc",
+      "daemon/daemon.h",
+      "gtk/MakeDialog.cc",
+      "gtk/Session.cc",
+      "gtk/Utils.cc",
+      "gtk/Utils.h",
+      "libtransmission/announce-list.cc",
+      "libtransmission/announce-list.h",
+      "libtransmission/announcer-http.cc",
+      "libtransmission/benc.h",
+      "libtransmission/blocklist.cc",
+      "libtransmission/error.cc",
+      "libtransmission/error.h",
+      "libtransmission/file-capacity.cc",
+      "libtransmission/file-posix.cc",
+      "libtransmission/file-win32.cc",
+      "libtransmission/file.cc",
+      "libtransmission/file.h",
+      "libtransmission/handshake.cc",
+      "libtransmission/inout.cc",
+      "libtransmission/magnet-metainfo.cc",
+      "libtransmission/magnet-metainfo.h",
+      "libtransmission/makemeta.cc",
+      "libtransmission/makemeta.h",
+      "libtransmission/open-files.cc",
+      "libtransmission/peer-io.cc",
+      "libtransmission/peer-socket.cc",
+      "libtransmission/peer-socket.h",
+      "libtransmission/resume.cc",
+      "libtransmission/rpc-server.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/session-id.cc",
+      "libtransmission/subprocess-posix.cc",
+      "libtransmission/subprocess-win32.cc",
+      "libtransmission/subprocess.h",
+      "libtransmission/torrent-ctor.cc",
+      "libtransmission/torrent-files.cc",
+      "libtransmission/torrent-files.h",
+      "libtransmission/torrent-magnet.cc",
+      "libtransmission/torrent-magnet.h",
+      "libtransmission/torrent-metainfo.cc",
+      "libtransmission/torrent-metainfo.h",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "libtransmission/tr-buffer.h",
+      "libtransmission/transmission.h",
+      "libtransmission/utils.cc",
+      "libtransmission/utils.h",
+      "libtransmission/variant-json.cc",
+      "libtransmission/variant.cc",
+      "libtransmission/variant.h",
+      "libtransmission/watchdir.cc",
+      "macosx/CreatorWindowController.mm",
+      "macosx/Torrent.mm",
+      "qt/MakeDialog.cc",
+      "tests/libtransmission/announce-list-test.cc",
+      "tests/libtransmission/benc-test.cc",
+      "tests/libtransmission/copy-test.cc",
+      "tests/libtransmission/error-test.cc",
+      "tests/libtransmission/file-test.cc",
+      "tests/libtransmission/makemeta-test.cc",
+      "tests/libtransmission/open-files-test.cc",
+      "tests/libtransmission/rename-test.cc",
+      "tests/libtransmission/subprocess-test.cc",
+      "tests/libtransmission/test-fixtures.h",
+      "tests/libtransmission/torrent-magnet-test.cc",
+      "tests/libtransmission/torrent-metainfo-test.cc",
+      "tests/libtransmission/utils-test.cc",
+      "tests/libtransmission/variant-test.cc",
+      "utils/create.cc",
+      "utils/edit.cc",
+      "utils/show.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-2e7448c",
+    "buggy_commit": "1b5322685342e44fc7a1caa2b3f83cea25d073a4",
+    "golden_commit": "2e7448c9bcc17b722ea26a209fb5b2ab86a0554c",
+    "message": "fix: appendSanitizedComponent is too aggressive on non-WIN32 (and not enough aggressive on WIN32) (#6187)",
+    "files": [
+      "libtransmission/torrent-files.cc",
+      "tests/libtransmission/torrent-files-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-c697d95",
+    "buggy_commit": "ccce37ba6c0538511f825308f56fa6f40ab98abd",
+    "golden_commit": "c697d95ad352be74638169fac8280bada8b4c54b",
+    "message": "fix: crash after nullptr dereference in rpcimpl (#6177)",
+    "files": [
+      "libtransmission/rpcimpl.cc",
+      "tests/libtransmission/rpc-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-0259edb",
+    "buggy_commit": "d273e0f90ec5dff09b4c82d1ab20a9fe7018d26c",
+    "golden_commit": "0259edbaf3996e33dbd3b85faa8c0254a47586f0",
+    "message": "fix: json string serializer improperly escaping characters (#6005)",
+    "files": [
+      "libtransmission/utils.cc",
+      "libtransmission/utils.h",
+      "libtransmission/variant-json.cc",
+      "tests/libtransmission/json-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-fbfbfac",
+    "buggy_commit": "59c638c63dea7b7c78a9c36a5cdec51fa3aa2a79",
+    "golden_commit": "fbfbfac3ae3216b3f0f239b140e5f5cb22533449",
+    "message": "fix: minor coverity warnings (#5916)",
+    "files": [
+      "gtk/Application.cc",
+      "gtk/FilterBar.cc",
+      "gtk/Utils.h",
+      "libtransmission/announcer.cc",
+      "libtransmission/file-capacity.cc",
+      "libtransmission/session.cc",
+      "libtransmission/tr-udp.cc",
+      "libtransmission/utils.h",
+      "tests/libtransmission/announce-list-test.cc",
+      "tests/libtransmission/file-test.cc",
+      "utils/remote.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-449549c",
+    "buggy_commit": "916534a687af9f6d98a9dbf6ac748dde4489866c",
+    "golden_commit": "449549c84f7482db5054fc0080fa2f8be8af0729",
+    "message": "fix: do not mark peer as not connectable when we are currently connected (#5889)",
+    "files": [
+      "libtransmission/peer-mgr.cc",
+      "tests/libtransmission/CMakeLists.txt",
+      "tests/libtransmission/tr-peer-info-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-8873f2a",
+    "buggy_commit": "1a86c65b44f04af6964fa24f5ac47e62f05a4788",
+    "golden_commit": "8873f2a50c1387bf4b6e47b01faa4bab5f4254b8",
+    "message": "fix: announce with query replace bug (#5871)",
+    "files": [
+      "libtransmission/announce-list.cc",
+      "libtransmission/announce-list.h",
+      "tests/libtransmission/announce-list-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-27f3a5b",
+    "buggy_commit": "586cff9506487eabf72baa3c1588e623a8b1ac63",
+    "golden_commit": "27f3a5b82a0456ce7f26f215c4d803f5793a39d8",
+    "message": "fix: announce LDP on listening interface (#5875)",
+    "files": [
+      "libtransmission/session.h",
+      "libtransmission/tr-lpd.cc",
+      "libtransmission/tr-lpd.h",
+      "tests/libtransmission/lpd-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-97da2ad",
+    "buggy_commit": "0f85c9e0e4993f02f91f852a7255049d3853bb1f",
+    "golden_commit": "97da2adbca0eca2e6b7a6e83e6d398e9dd69e61c",
+    "message": "fix: spelling mistake in `net.h` function call (#5739)",
+    "files": [
+      "libtransmission/net.h",
+      "tests/libtransmission/net-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-2211086",
+    "buggy_commit": "f83a60830ae280c64789ea5647fd408a4224b7ce",
+    "golden_commit": "2211086338e4c7a31026e682448784b14ed61e52",
+    "message": "fix: conform to libcurl requirements to avoid memory leak (#5702)",
+    "files": [
+      "cli/cli.cc",
+      "daemon/daemon.cc",
+      "gtk/main.cc",
+      "libtransmission/session-thread.cc",
+      "libtransmission/tr-lpd.cc",
+      "libtransmission/utils.cc",
+      "libtransmission/utils.h",
+      "libtransmission/watchdir-win32.cc",
+      "libtransmission/web.cc",
+      "macosx/main.mm",
+      "qt/Application.cc",
+      "tests/libtransmission/announcer-udp-test.cc",
+      "tests/libtransmission/dht-test.cc",
+      "tests/libtransmission/test-fixtures.h",
+      "tests/libtransmission/watchdir-test.cc",
+      "utils/remote.cc",
+      "utils/show.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-9c17463",
+    "buggy_commit": "0fbafc9e18383ccbb27963f4bba173c66743f286",
+    "golden_commit": "9c17463a80d8127537c6cfaf7f323e58083209c1",
+    "message": "fix: revert \"perf: improve IPv4 `tr_address` comparison\" (#5709)",
+    "files": [
+      "libtransmission/net.cc",
+      "tests/libtransmission/net-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-6426168",
+    "buggy_commit": "4b9b9920bfea51a9fe0f2a9ac69c22db3571be85",
+    "golden_commit": "64261685d8d474ee378a9dbaf3c2ee07761be342",
+    "message": "fix: use both address + port together as a key for peer lookup (#5619)",
+    "files": [
+      "code_style.sh",
+      "libtransmission/handshake.cc",
+      "libtransmission/handshake.h",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/peer-mgr.h",
+      "libtransmission/peer-msgs.cc",
+      "tests/libtransmission/handshake-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-ddac059",
+    "buggy_commit": "b8ff35c4ce93cb12df20961f8477cc34c8362241",
+    "golden_commit": "ddac05954b046b55f4bf25f45204f83f8ad8da4b",
+    "message": "fix: return error when renaming into existing file (#5563)",
+    "files": [
+      "libtransmission/torrent.cc",
+      "tests/libtransmission/rename-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-802619e",
+    "buggy_commit": "c8e84f870b5c707d712831525cc0910a907ac0ef",
+    "golden_commit": "802619e174fd746d95ca8d302a93eec92fe4e112",
+    "message": "fix: fixes and improvements to global IP query (#5510)",
+    "files": [
+      "libtransmission/global-ip-cache.cc",
+      "libtransmission/global-ip-cache.h",
+      "libtransmission/session.cc",
+      "libtransmission/session.h",
+      "tests/libtransmission/global-ip-cache-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-2cf9678",
+    "buggy_commit": "e88bf946e1cfa90323c8f07ef7e3dc0fdff6dacb",
+    "golden_commit": "2cf96787377d762ffd6098c5143886b229a739aa",
+    "message": "fix: revert buffer reserve space (#5528)",
+    "files": [
+      "libtransmission/announcer-udp.cc",
+      "libtransmission/peer-io.cc",
+      "libtransmission/peer-io.h",
+      "libtransmission/peer-mse.h",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/peer-socket.cc",
+      "libtransmission/peer-socket.h",
+      "libtransmission/tr-buffer.h",
+      "libtransmission/variant-benc.cc",
+      "libtransmission/variant-json.cc",
+      "libtransmission/variant.cc",
+      "tests/libtransmission/announcer-udp-test.cc",
+      "tests/libtransmission/buffer-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-e8fcb02",
+    "buggy_commit": "c2002c9481b7090e8cebdf960630d1a42215fc09",
+    "golden_commit": "e8fcb025a06eca6923f00228c3318501fbb93263",
+    "message": "fix: use user-preferred locale (#5444)",
+    "files": [
+      "cli/cli.cc",
+      "daemon/daemon.cc",
+      "gtk/main.cc",
+      "libtransmission/utils.cc",
+      "libtransmission/utils.h",
+      "macosx/main.mm",
+      "qt/Application.cc",
+      "tests/libtransmission/json-test.cc",
+      "tests/utils/run_transmission_show.cmake",
+      "utils/create.cc",
+      "utils/edit.cc",
+      "utils/remote.cc",
+      "utils/show.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-9f8a7a6",
+    "buggy_commit": "f9178eb084acc624320f2de26c16a1a7652f55a6",
+    "golden_commit": "9f8a7a656eb4fc17156b4dee1843b1ed0bb87341",
+    "message": "fix: Buffer::Buffer(Buffer&&) bug  (#5435)",
+    "files": [
+      "libtransmission/tr-buffer.h",
+      "tests/libtransmission/buffer-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-c60bb5b",
+    "buggy_commit": "ca44c9143af7361081d000a20b1b986e72dbc3ff",
+    "golden_commit": "c60bb5b834f0518a81ca3117a0f2af01fd53850f",
+    "message": "fix: crash when magnet dn isn't utf-8 (#5244)",
+    "files": [
+      "Transmission.xcodeproj/project.pbxproj",
+      "libtransmission/CMakeLists.txt",
+      "libtransmission/magnet-metainfo.h",
+      "libtransmission/torrent-metainfo.cc",
+      "libtransmission/utils.cc",
+      "libtransmission/utils.h",
+      "libtransmission/utils.mm",
+      "tests/libtransmission/utils-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-033d698",
+    "buggy_commit": "39e3e1d87b69a1a5e63a6cc17ef62c3b40034711",
+    "golden_commit": "033d69830611e0f948e35e4df2c1ff8664712a91",
+    "message": "fix: parsing of ipv6 tracker announce URLs (#5174)",
+    "files": [
+      "libtransmission/web-utils.cc",
+      "tests/libtransmission/web-utils-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-39e3e1d",
+    "buggy_commit": "2dd39596d1ac99f216c34a201423af36454e9f2a",
+    "golden_commit": "39e3e1d87b69a1a5e63a6cc17ef62c3b40034711",
+    "message": "fix: increase priority of first and last piece of each file (#5167)",
+    "files": [
+      "libtransmission/file-piece-map.cc",
+      "libtransmission/file-piece-map.h",
+      "tests/libtransmission/file-piece-map-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-848212e",
+    "buggy_commit": "8fc904617bffc36127b90989093d5686701a4d23",
+    "golden_commit": "848212eea11da1a989734c2b09d8ac13f5a8030f",
+    "message": "fix: escaped representation of non-BMP characters when generating JSON (#5096)",
+    "files": [
+      "libtransmission/variant-json.cc",
+      "tests/libtransmission/json-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-d327350",
+    "buggy_commit": "d21a3b622a26d5adc9dcefe70fc8f695d6a886e2",
+    "golden_commit": "d3273504bdbc19466fd5ca4254d3080510c75df6",
+    "message": "fix: 5053 old torrent files keep appearing (#5117)",
+    "files": [
+      "libtransmission/resume.cc",
+      "libtransmission/resume.h",
+      "libtransmission/torrent-metainfo.cc",
+      "libtransmission/torrent.cc",
+      "tests/libtransmission/rename-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-211e3fc",
+    "buggy_commit": "03a23cf797bab9b6ce8ad7e2c246046027cfcd74",
+    "golden_commit": "211e3fc98571f3b55d17b1ff38facdc02762e3ad",
+    "message": "fix: always add `announce` key even when including announce-list (#5106)",
+    "files": [
+      "libtransmission/makemeta.cc",
+      "tests/libtransmission/makemeta-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-4461aa6",
+    "buggy_commit": "9d91d1e96911109eec41ab9d0f942cd7950d2568",
+    "golden_commit": "4461aa68d909968d6fc20b7743aa435edec14995",
+    "message": "fix: handle block fragments that arrive from peers out-of-order (#4890)",
+    "files": [
+      "libtransmission/cache.cc",
+      "libtransmission/cache.h",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/torrent.cc",
+      "libtransmission/webseed.cc",
+      "tests/libtransmission/move-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-649fd4d",
+    "buggy_commit": "dcd750121118035244529f7ad781f79087377a3b",
+    "golden_commit": "649fd4d0d2088a9c38078c9c135ef3d899a9bbae",
+    "message": "fix: do not lose magnet links when upgrading from tr3 to 4 (#4840)",
+    "files": [
+      "libtransmission/torrent-metainfo.cc",
+      "libtransmission/torrent-metainfo.h",
+      "tests/libtransmission/assets/gimp-2.10.32-1-arm64.dmg.torrent",
+      "tests/libtransmission/torrent-metainfo-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-e0753fe",
+    "buggy_commit": "065facc07c72ddb7a096cb97b6680d3f13891ddb",
+    "golden_commit": "e0753fedb9219e1f3998ed385ec4cbc466dac7ba",
+    "message": "fix: put \"private\" and \"source\" inside the metadata \"info\" key (#4809)",
+    "files": [
+      "libtransmission/makemeta.cc",
+      "tests/libtransmission/makemeta-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-0e5f7f8",
+    "buggy_commit": "724a0f48f04075d3bfd23cea654ba22423fe63fd",
+    "golden_commit": "0e5f7f86d7e4e0c70ed5be29abe5296affd1e7fe",
+    "message": "fix: coverity warnings (#4687)",
+    "files": [
+      "libtransmission/net.cc",
+      "tests/libtransmission/file-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-977a190",
+    "buggy_commit": "5fe95ad5b0ffe9e53c8bc8dd9082ec67ce9da807",
+    "golden_commit": "977a190646785d50ab41b5a171a58aa3fb48bf07",
+    "message": "fix: msvc warnings (#4651)",
+    "files": [
+      "libtransmission/net.cc",
+      "qt/Application.cc",
+      "qt/FileTreeDelegate.cc",
+      "tests/libtransmission/announcer-udp-test.cc",
+      "utils/remote.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-2b90a5f",
+    "buggy_commit": "192a76b62194b7889e01e37db15f0735fc89ba0a",
+    "golden_commit": "2b90a5fd55e2eff72f2d41668b39bfae56144f40",
+    "message": "refactor: possible FTBFS fix on arm7 (#4492)",
+    "files": [
+      "libtransmission/crypto-utils.cc",
+      "libtransmission/crypto-utils.h",
+      "tests/libtransmission/crypto-test-ref.h"
+    ]
+  },
+  {
+    "task_id": "transmission-9a5d9a0",
+    "buggy_commit": "468310300cd535fe8c533f553f111be8501e62db",
+    "golden_commit": "9a5d9a0ba2203bee54ec82212c5077210881a6fb",
+    "message": "refactor: tr_peer_socket (#4325)",
+    "files": [
+      "Transmission.xcodeproj/project.pbxproj",
+      "libtransmission/CMakeLists.txt",
+      "libtransmission/handshake.cc",
+      "libtransmission/net.cc",
+      "libtransmission/peer-io.cc",
+      "libtransmission/peer-io.h",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/peer-socket.cc",
+      "libtransmission/peer-socket.h",
+      "libtransmission/session.cc",
+      "libtransmission/tr-utp.cc",
+      "tests/libtransmission/handshake-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-ec6cb67",
+    "buggy_commit": "feeea2649e127f553d35c0f3efdd414f3350575f",
+    "golden_commit": "ec6cb67c5c096127d9c462cb9f1895ef1a5d2246",
+    "message": "fix GTK client message log window does not restore level selection (#4242)",
+    "files": [
+      "gtk/MessageLogWindow.cc",
+      "libtransmission/session.cc",
+      "libtransmission/variant-converters.cc",
+      "tests/libtransmission/settings-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-8a35aa0",
+    "buggy_commit": "342484d14ad9eff97a88da5845d952ed30e7f601",
+    "golden_commit": "8a35aa09036edb887b4f8d463e3666af47ba6d29",
+    "message": "refactor: add tr_rand_obj() (#4238)",
+    "files": [
+      "libtransmission/announcer-udp.cc",
+      "libtransmission/announcer.cc",
+      "libtransmission/crypto-utils.cc",
+      "libtransmission/crypto-utils.h",
+      "libtransmission/peer-mgr-wishlist.cc",
+      "libtransmission/peer-mse.cc",
+      "libtransmission/rpc-server.cc",
+      "libtransmission/session-id.cc",
+      "libtransmission/tr-dht.cc",
+      "libtransmission/tr-lpd.cc",
+      "tests/libtransmission/announcer-udp-test.cc",
+      "tests/libtransmission/clients-test.cc",
+      "tests/libtransmission/completion-test.cc",
+      "tests/libtransmission/crypto-test-ref.h",
+      "tests/libtransmission/dht-test.cc",
+      "tests/libtransmission/handshake-test.cc",
+      "tests/libtransmission/lpd-test.cc",
+      "tests/libtransmission/magnet-metainfo-test.cc",
+      "tests/libtransmission/test-fixtures.h"
+    ]
+  },
+  {
+    "task_id": "transmission-554ba06",
+    "buggy_commit": "ead71e8fd30f094fad538b3670e03328beeb37e8",
+    "golden_commit": "554ba06ae2f1aa351d9a7da44559e7e312a39366",
+    "message": "fix: coverity warnings, sonarcloud code smells (#4232)",
+    "files": [
+      "gtk/FaviconCache.cc",
+      "gtk/Session.cc",
+      "libtransmission/announcer-http.cc",
+      "libtransmission/handshake.cc",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/rpc-server.cc",
+      "libtransmission/session.cc",
+      "libtransmission/verify.cc",
+      "libtransmission/verify.h",
+      "qt/FileTreeItem.cc",
+      "tests/libtransmission/file-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-19bc155",
+    "buggy_commit": "6cd6f78a9f4d64aae56d8bb917df5d057c81dfba",
+    "golden_commit": "19bc15523f3661e3999741e039ebf0c6cd583d2c",
+    "message": "fix: new sonarcloud, coverity, gcc warnings (#4229)",
+    "files": [
+      "gtk/DetailsDialog.cc",
+      "libtransmission/announcer-udp.cc",
+      "libtransmission/announcer.cc",
+      "libtransmission/bandwidth.cc",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/peer-mse.h",
+      "libtransmission/session.cc",
+      "tests/libtransmission/bitfield-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-42f26aa",
+    "buggy_commit": "a45cc2a79d6551cee2f689e9f3a3d174687d36cb",
+    "golden_commit": "42f26aad0b5d05f93b3302abdc59c778788dc5c4",
+    "message": "fix: ftbfs on Windows (#4204)",
+    "files": [
+      "libtransmission/announcer-udp.cc",
+      "libtransmission/handshake.cc",
+      "libtransmission/net.cc",
+      "libtransmission/peer-io.cc",
+      "libtransmission/torrent.cc",
+      "tests/libtransmission/announcer-udp-test.cc",
+      "tests/libtransmission/dht-test.cc",
+      "tests/libtransmission/net-test.cc",
+      "tests/libtransmission/settings-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-250e055",
+    "buggy_commit": "48e42ac71e8a9532016d2884bee8cf7568ddd88a",
+    "golden_commit": "250e055c1d69295b6d73a7ce00fec404db3e9329",
+    "message": "fix: warnings from clang tidy sonarcloud coverity (#4143)",
+    "files": [
+      "libtransmission/announcer-udp.cc",
+      "libtransmission/blocklist.cc",
+      "libtransmission/handshake.cc",
+      "libtransmission/peer-io.cc",
+      "libtransmission/peer-io.h",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/session-thread.cc",
+      "libtransmission/session.cc",
+      "libtransmission/session.h",
+      "libtransmission/utils-ev.h",
+      "libtransmission/utils.cc",
+      "qt/MakeDialog.cc",
+      "tests/libtransmission/dht-test.cc",
+      "tests/libtransmission/handshake-test.cc",
+      "tests/libtransmission/watchdir-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-4ea9c87",
+    "buggy_commit": "20c2fde7aece077eefff689a3c3dc478e59a74a2",
+    "golden_commit": "4ea9c87feac9ae62f48b2180b153926e1a16c89d",
+    "message": "fix: some typos (#3904)",
+    "files": [
+      "AUTHORS",
+      "docs/Port-Forwarding-Guide.md",
+      "docs/README.md",
+      "docs/Release-Notes.md",
+      "extras/encryption.txt",
+      "gtk/ui/gtk3/PrefsDialog.ui",
+      "gtk/ui/gtk4/PrefsDialog.ui",
+      "libtransmission/handshake.cc",
+      "libtransmission/jsonsl.c",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/transmission.h",
+      "macosx/Controller.mm",
+      "macosx/CreatorWindowController.mm",
+      "macosx/Credits.rtf",
+      "macosx/Torrent.mm",
+      "macosx/TransmissionHelp/html/usingt.html",
+      "news/news-2.42-and-older.md",
+      "news/news-4.0.0-beta-1.md",
+      "tests/libtransmission/handshake-test.cc",
+      "web/src/formatter.js",
+      "web/src/torrent.js"
+    ]
+  },
+  {
+    "task_id": "transmission-9fb590d",
+    "buggy_commit": "b41501eeb8d473768120873f03134b81bf48cdb0",
+    "golden_commit": "9fb590d3f5f65dcc991c0e689fe7131306f76ffb",
+    "message": "fix: recent coverity warnings (#3788)",
+    "files": [
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/verify.cc",
+      "tests/libtransmission/file-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-dde626d",
+    "buggy_commit": "c532728c428b51183f48befcc12c9a8af611979f",
+    "golden_commit": "dde626d5e5b9ec4e66dc6ee45addb7e21a1de132",
+    "message": "refactor: remove unused (#3675)",
+    "files": [
+      "libtransmission/file-win32.cc",
+      "libtransmission/session.cc",
+      "libtransmission/session.h",
+      "libtransmission/tr-macros.h",
+      "libtransmission/transmission.h",
+      "tests/libtransmission/session-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-c7466b3",
+    "buggy_commit": "1c8032d23aca43e9366258d9bac03a4f4adae2bb",
+    "golden_commit": "c7466b3ff4bb564a692cf137dcdbae98bc31a29e",
+    "message": "fix: coverity warnings (#3632)",
+    "files": [
+      "gtk/Application.cc",
+      "gtk/FaviconCache.cc",
+      "libtransmission/.clang-tidy",
+      "libtransmission/bandwidth.cc",
+      "libtransmission/file-posix.cc",
+      "libtransmission/handshake.cc",
+      "libtransmission/makemeta.cc",
+      "libtransmission/natpmp_local.h",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/port-forwarding.cc",
+      "libtransmission/rpc-server.cc",
+      "libtransmission/session-id.h",
+      "libtransmission/session.h",
+      "libtransmission/timer-ev.cc",
+      "libtransmission/utils.cc",
+      "tests/libtransmission/announce-list-test.cc",
+      "tests/libtransmission/test-fixtures.h",
+      "tests/libtransmission/watchdir-test.cc",
+      "utils/create.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-b1cc968",
+    "buggy_commit": "a5f7df34abb747cfe71c6d7196d2fcf6b0446e5c",
+    "golden_commit": "b1cc968969907951dcc114a4622a4969476bb8b9",
+    "message": "Fix out-of-bounds read in torrent parsing (#3600)",
+    "files": [
+      "libtransmission/torrent-metainfo.cc",
+      "tests/libtransmission/torrent-metainfo-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-8b983b3",
+    "buggy_commit": "3ed6b187bb3e421263dcee843c0780cfa6be02f2",
+    "golden_commit": "8b983b3d1ccb521ae485d51a3e186a4fd022998d",
+    "message": "refactor: tr_sys_path_resolve() returns a std::string (#3587)",
+    "files": [
+      "CMakeLists.txt",
+      "libtransmission/file-posix.cc",
+      "libtransmission/file-win32.cc",
+      "libtransmission/file.h",
+      "libtransmission/utils.cc",
+      "libtransmission/utils.h",
+      "libtransmission/variant-benc.cc",
+      "tests/libtransmission/file-test.cc",
+      "tests/libtransmission/subprocess-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-ec79a2a",
+    "buggy_commit": "78b24b594ba629cbf0d1bd8187513ae06ac50b5b",
+    "golden_commit": "ec79a2a888d1564df03b9b3ee08128ae042c2c20",
+    "message": "fix: clang-tidy misc-const-correctness warnings (#3529)",
+    "files": [
+      "libtransmission/announcer-http.cc",
+      "libtransmission/announcer.cc",
+      "libtransmission/bitfield.cc",
+      "libtransmission/crypto-utils.cc",
+      "libtransmission/file-posix.cc",
+      "libtransmission/handshake.cc",
+      "libtransmission/magnet-metainfo.cc",
+      "libtransmission/peer-io.cc",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/session.cc",
+      "libtransmission/torrent-magnet.cc",
+      "libtransmission/tr-dht.cc",
+      "libtransmission/tr-lpd.cc",
+      "libtransmission/tr-udp.cc",
+      "libtransmission/upnp.cc",
+      "libtransmission/utils.cc",
+      "qt/Application.cc",
+      "qt/DetailsDialog.cc",
+      "qt/FaviconCache.cc",
+      "qt/FileTreeModel.cc",
+      "qt/FileTreeView.cc",
+      "qt/FilterBarComboBox.cc",
+      "qt/IconCache.cc",
+      "qt/MainWindow.cc",
+      "qt/MakeDialog.cc",
+      "qt/Prefs.cc",
+      "qt/PrefsDialog.cc",
+      "qt/RpcClient.cc",
+      "qt/RpcQueue.cc",
+      "qt/SqueezeLabel.cc",
+      "qt/Torrent.cc",
+      "qt/TorrentDelegate.cc",
+      "qt/TorrentFilter.cc",
+      "qt/TrackerDelegate.cc",
+      "qt/TrackerModel.cc",
+      "qt/TrackerModelFilter.cc",
+      "tests/libtransmission/bitfield-test.cc",
+      "tests/libtransmission/copy-test.cc",
+      "tests/libtransmission/file-piece-map-test.cc",
+      "tests/libtransmission/makemeta-test.cc",
+      "tests/libtransmission/utils-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-0da1cbb",
+    "buggy_commit": "c50da43ae0751b09d80a40dfba7a3676c000f8d9",
+    "golden_commit": "0da1cbb6ecaa405ec36a3736924cd20f4822ed2a",
+    "message": "fix: 3508 location invalidation (#3511)",
+    "files": [
+      "daemon/daemon.cc",
+      "gtk/Application.cc",
+      "gtk/Session.cc",
+      "gtk/Session.h",
+      "libtransmission/platform.cc",
+      "libtransmission/platform.h",
+      "libtransmission/resume.cc",
+      "libtransmission/rpc-server.cc",
+      "libtransmission/rpc-server.h",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/session.cc",
+      "libtransmission/session.h",
+      "libtransmission/stats.cc",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "libtransmission/tr-dht.cc",
+      "libtransmission/transmission.h",
+      "tests/libtransmission/blocklist-test.cc",
+      "tests/libtransmission/file-test.cc",
+      "tests/libtransmission/move-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-c50da43",
+    "buggy_commit": "3f5b439fccab39a9929b0d497631ce89499cdfa1",
+    "golden_commit": "c50da43ae0751b09d80a40dfba7a3676c000f8d9",
+    "message": "refactor: remove tr_sessionGetConfigDir() (#3506)",
+    "files": [
+      "daemon/daemon.cc",
+      "gtk/Application.cc",
+      "gtk/Session.cc",
+      "gtk/Session.h",
+      "libtransmission/platform.cc",
+      "libtransmission/platform.h",
+      "libtransmission/resume.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/session.cc",
+      "libtransmission/session.h",
+      "libtransmission/stats.cc",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "libtransmission/tr-dht.cc",
+      "libtransmission/transmission.h",
+      "tests/libtransmission/blocklist-test.cc",
+      "tests/libtransmission/file-test.cc",
+      "tests/libtransmission/move-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-f8b3514",
+    "buggy_commit": "94eeebc5b309f38b648a179612bcee4e1c05c73f",
+    "golden_commit": "f8b3514c0e13329be8d6104f3764d01288a69246",
+    "message": "tr_makeMetaInfo: new anonymize option (closes #3420) (#3452)",
+    "files": [
+      "gtk/MakeDialog.cc",
+      "libtransmission/makemeta.cc",
+      "libtransmission/makemeta.h",
+      "macosx/CreatorWindowController.mm",
+      "qt/MakeDialog.cc",
+      "tests/libtransmission/makemeta-test.cc",
+      "utils/create.cc",
+      "utils/transmission-create.1"
+    ]
+  },
+  {
+    "task_id": "transmission-41c0f88",
+    "buggy_commit": "fb431cb1c16ba5974ebd58b7cd6a7c263e7b90f7",
+    "golden_commit": "41c0f8885e1fd086c27afd2ae46a0c5c04ea1e74",
+    "message": "fix: limit pad search during encrypted handshake (#3471)",
+    "files": [
+      "libtransmission/handshake.cc",
+      "tests/libtransmission/handshake-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-c3db52e",
+    "buggy_commit": "39d442b3ee6af17d05bb544a1368ecdff910d0bd",
+    "golden_commit": "c3db52e31015c67f79f08a3fda81c26a84c40983",
+    "message": "Fix #3444, support single file hybrid torrents. (#3446)",
+    "files": [
+      "libtransmission/torrent-metainfo.cc",
+      "tests/utils/CMakeLists.txt",
+      "tests/utils/assets/hybrid-single-ubuntu-20.04.3-desktop-amd64.iso.show",
+      "tests/utils/assets/hybrid-single-ubuntu-20.04.3-desktop-amd64.iso.torrent"
+    ]
+  },
+  {
+    "task_id": "transmission-e9a7ddf",
+    "buggy_commit": "9dfb3bf3df6bc06032eff9a84a63d5a8890892a9",
+    "golden_commit": "e9a7ddf7f941046715e19b29a167efe17170e12e",
+    "message": "fix: minor warnings (#3413)",
+    "files": [
+      "libtransmission/torrent-magnet.cc",
+      "tests/libtransmission/blocklist-test.cc",
+      "tests/libtransmission/torrent-metainfo-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-513f4bc",
+    "buggy_commit": "707fce44da8ede86761c4b5611722bbd5bc7982e",
+    "golden_commit": "513f4bc91b579e4a8f25edf68242dccba1500850",
+    "message": "fix: assertion failed \"s->leftUntilDone <= s->sizeWhenDone\" (#3406)",
+    "files": [
+      "libtransmission/block-info.h",
+      "libtransmission/completion.cc",
+      "libtransmission/completion.h",
+      "tests/libtransmission/completion-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-142b2a0",
+    "buggy_commit": "083529c5bb43afaad7d53df295407ff4d8a7a20c",
+    "golden_commit": "142b2a088d64c85a0304dd4decdcb75cb93efeec",
+    "message": "Support wolfSSL 4.6+ (#3398)",
+    "files": [
+      "libtransmission/crypto-utils-cyassl.cc",
+      "libtransmission/crypto.cc",
+      "tests/libtransmission/CMakeLists.txt"
+    ]
+  },
+  {
+    "task_id": "transmission-3237323",
+    "buggy_commit": "85a7d0e09d98e57a878670dd7ad28e8a18cad7e3",
+    "golden_commit": "3237323b8e665f400acefdd6f7185a09d574e8a9",
+    "message": "Add basic support for v2 hashes in transmission-show (#3380)",
+    "files": [
+      "CMakeLists.txt",
+      "libtransmission/crypto-utils-ccrypto.cc",
+      "libtransmission/crypto-utils-cyassl.cc",
+      "libtransmission/crypto-utils-openssl.cc",
+      "libtransmission/crypto-utils-polarssl.cc",
+      "libtransmission/crypto-utils.cc",
+      "libtransmission/crypto-utils.h",
+      "libtransmission/magnet-metainfo.cc",
+      "libtransmission/magnet-metainfo.h",
+      "libtransmission/torrent-metainfo.cc",
+      "libtransmission/torrent-metainfo.h",
+      "libtransmission/tr-macros.h",
+      "tests/libtransmission/crypto-test-ref.h",
+      "tests/libtransmission/crypto-test.cc",
+      "tests/utils/CMakeLists.txt",
+      "tests/utils/assets/Inner_Sanctum_movie_archive.show",
+      "tests/utils/assets/Thor_and_the_Amazon_Women.avi.show",
+      "tests/utils/assets/bittorrent-v2-hybrid-test.show",
+      "tests/utils/assets/bittorrent-v2-hybrid-test.torrent",
+      "tests/utils/assets/bittorrent-v2-test.show",
+      "tests/utils/assets/ubuntu-20.04.3-desktop-amd64.iso.show",
+      "utils/show.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-85c11b7",
+    "buggy_commit": "b983a3ba5c878a1683ccd602c5647c56aade8b6a",
+    "golden_commit": "85c11b7f03016a4c242fc5e14a6ca1c3be8e3702",
+    "message": "fix: requests across piece boundaries when piece is not a multiple of block_size",
+    "files": [
+      "libtransmission/cache.cc",
+      "libtransmission/cache.h",
+      "libtransmission/peer-io.cc",
+      "libtransmission/peer-io.h",
+      "libtransmission/peer-mgr-wishlist.cc",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/torrent.h",
+      "libtransmission/webseed.cc",
+      "tests/libtransmission/move-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-34cb56b",
+    "buggy_commit": "d34bd0b4d6417da24b7decb192bf75a33881c9e3",
+    "golden_commit": "34cb56b2af75afb11697850e2e2dd7f27e842d0c",
+    "message": "refactor: remove unused tr_ptrArray class (#3262)",
+    "files": [
+      ".github/workflows/sanitizer-clang.yml",
+      ".github/workflows/sanitizer-gcc.yml",
+      "Transmission.xcodeproj/project.pbxproj",
+      "libtransmission/CMakeLists.txt",
+      "libtransmission/ptrarray.cc",
+      "libtransmission/ptrarray.h",
+      "tests/libtransmission/utils-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-256b436",
+    "buggy_commit": "26ed2a0ec823762d61494326baaeeaf7a1d1970b",
+    "golden_commit": "256b4360232c792bd6a1fa556c23e2fdbee41eb4",
+    "message": "fix: clang 15 warnings (#3172)",
+    "files": [
+      "libtransmission/announcer.cc",
+      "libtransmission/clients.cc",
+      "libtransmission/completion.cc",
+      "libtransmission/crypto-utils.cc",
+      "libtransmission/crypto.cc",
+      "libtransmission/handshake.cc",
+      "libtransmission/inout.cc",
+      "libtransmission/peer-io.cc",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/torrent-metainfo.cc",
+      "libtransmission/torrent.cc",
+      "libtransmission/tr-macros.h",
+      "libtransmission/tr-udp.cc",
+      "qt/.clang-tidy",
+      "tests/libtransmission/.clang-tidy"
+    ]
+  },
+  {
+    "task_id": "transmission-84d65d8",
+    "buggy_commit": "1c3d60fcd5c75f96dbb7f7e9bb3b0fa3569fedc3",
+    "golden_commit": "84d65d8e6184351dcf36e7491eb04efbe982edb0",
+    "message": "fix: coverity warnings (#3168)",
+    "files": [
+      "gtk/FaviconCache.cc",
+      "libtransmission/handshake.cc",
+      "libtransmission/peer-mgr.cc",
+      "tests/libtransmission/open-files-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-67a0784",
+    "buggy_commit": "c0bb2d40f123f99dca5d152087317706c09edaa8",
+    "golden_commit": "67a078402d570021006a2996fa8b7964bf008cb8",
+    "message": "fix: compiler warnings (#3123)",
+    "files": [
+      "libtransmission/bitfield.cc",
+      "libtransmission/blocklist.cc",
+      "libtransmission/blocklist.h",
+      "libtransmission/rpc-server.cc",
+      "qt/DetailsDialog.cc",
+      "qt/MainWindow.cc",
+      "tests/libtransmission/blocklist-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-c0bb2d4",
+    "buggy_commit": "690cf50e539c20c77daf9d7db390d6306a3da157",
+    "golden_commit": "c0bb2d40f123f99dca5d152087317706c09edaa8",
+    "message": "refactor: add pathbuf and std::string-friendly helpers to tr_sys file and path funcs (#3118)",
+    "files": [
+      "cli/cli.cc",
+      "daemon/daemon.cc",
+      "gtk/OptionsDialog.cc",
+      "libtransmission/file.h",
+      "libtransmission/makemeta.cc",
+      "libtransmission/open-files.cc",
+      "libtransmission/platform.cc",
+      "libtransmission/session-id.cc",
+      "libtransmission/torrent-metainfo.cc",
+      "libtransmission/torrent.cc",
+      "libtransmission/tr-strbuf.h",
+      "libtransmission/utils.cc",
+      "tests/libtransmission/blocklist-test.cc",
+      "tests/libtransmission/file-test.cc",
+      "tests/libtransmission/remove-test.cc",
+      "tests/libtransmission/rename-test.cc",
+      "tests/libtransmission/test-fixtures.h",
+      "tests/libtransmission/torrent-metainfo-test.cc",
+      "tests/libtransmission/utils-test.cc",
+      "tests/libtransmission/watchdir-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-a28b07b",
+    "buggy_commit": "e23a4b35891d96dcf9614ddaa9595aea4a1b5563",
+    "golden_commit": "a28b07b3904b98d0115a0fc929d690ba10054d60",
+    "message": "Revert \"refactor: move tr_torrent callbacks to tr_session (#3003)\" (#3104)",
+    "files": [
+      "gtk/Session.cc",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/session.cc",
+      "libtransmission/session.h",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "libtransmission/transmission.h",
+      "macosx/Torrent.mm",
+      "tests/libtransmission/move-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-eb33b2f",
+    "buggy_commit": "7ff13825038cb1af3dc59e224190942f57d0de6b",
+    "golden_commit": "eb33b2faf5f99809dc5e68f5782032bdea48b3f2",
+    "message": "fix: tr_clientForId() (#2887)",
+    "files": [
+      "libtransmission/clients.cc",
+      "tests/libtransmission/clients-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-7aeb5d8",
+    "buggy_commit": "7cf920a020cb031f27d086e4bff09f682a3aef4f",
+    "golden_commit": "7aeb5d8b2fd54e8a3c7ad26812ba85a0acf8a301",
+    "message": "Merge branch 'main' into nevack/mojave-infowindow-fix",
+    "files": [
+      "README.md",
+      "cli/cli.cc",
+      "daemon/daemon.cc",
+      "gtk/Application.cc",
+      "gtk/DetailsDialog.cc",
+      "gtk/FileList.cc",
+      "gtk/IconCache.cc",
+      "gtk/OptionsDialog.cc",
+      "gtk/PrefsDialog.cc",
+      "gtk/Utils.cc",
+      "libtransmission/announcer.cc",
+      "libtransmission/makemeta.cc",
+      "libtransmission/net.cc",
+      "libtransmission/peer-mgr-active-requests.cc",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/tr-dht.cc",
+      "libtransmission/tr-strbuf.h",
+      "libtransmission/upnp.cc",
+      "libtransmission/utils.cc",
+      "libtransmission/utils.h",
+      "libtransmission/variant-benc.cc",
+      "libtransmission/variant-json.cc",
+      "macosx/CMakeLists.txt",
+      "macosx/Images/Images.xcassets/BlueDotFlat.imageset/BlueDotFlat.png",
+      "macosx/Images/Images.xcassets/BlueDotFlat.imageset/BlueDotFlat@2x.png",
+      "macosx/Images/Images.xcassets/BlueDotFlat.imageset/Contents.json",
+      "macosx/Images/Images.xcassets/GreenDotFlat.imageset/Contents.json",
+      "macosx/Images/Images.xcassets/GreenDotFlat.imageset/GreenDotFlat.png",
+      "macosx/Images/Images.xcassets/GreenDotFlat.imageset/GreenDotFlat@2x.png",
+      "macosx/Images/Images.xcassets/OrangeDotFlat.imageset/Contents.json",
+      "macosx/Images/Images.xcassets/OrangeDotFlat.imageset/OrangeDotFlat.png",
+      "macosx/Images/Images.xcassets/OrangeDotFlat.imageset/OrangeDotFlat@2x.png",
+      "macosx/Images/Images.xcassets/PurpleDotFlat.imageset/PurpleDotFlat.png",
+      "macosx/Images/Images.xcassets/PurpleDotFlat.imageset/PurpleDotFlat@2x.png",
+      "macosx/Images/Images.xcassets/RedDotFlat.imageset/RedDotFlat.png",
+      "macosx/Images/Images.xcassets/RedDotFlat.imageset/RedDotFlat@2x.png",
+      "macosx/Images/Images.xcassets/YellowDotFlat.imageset/YellowDotFlat.png",
+      "macosx/Images/Images.xcassets/YellowDotFlat.imageset/YellowDotFlat@2x.png",
+      "macosx/MessageWindow.xib",
+      "macosx/MessageWindowController.mm",
+      "qt/DetailsDialog.cc",
+      "qt/FilterBar.cc",
+      "qt/FilterBarComboBox.cc",
+      "qt/FilterBarComboBoxDelegate.cc",
+      "qt/MainWindow.cc",
+      "qt/TorrentModel.cc",
+      "tests/libtransmission/copy-test.cc",
+      "tests/libtransmission/makemeta-test.cc",
+      "tests/libtransmission/move-test.cc",
+      "tests/libtransmission/test-fixtures.h",
+      "tests/libtransmission/utils-test.cc",
+      "tests/libtransmission/web-utils-test.cc",
+      "third-party/googletest",
+      "utils/edit.cc",
+      "utils/remote.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-76f44b4",
+    "buggy_commit": "748d3c22237730c0411381f383e3f590da27ff18",
+    "golden_commit": "76f44b4b6fbf70dd7956e6b0eed063bba8f437bc",
+    "message": "fix: sonarcloud (#2868)",
+    "files": [
+      "gtk/Application.cc",
+      "gtk/DetailsDialog.cc",
+      "gtk/FileList.cc",
+      "gtk/IconCache.cc",
+      "gtk/OptionsDialog.cc",
+      "gtk/PrefsDialog.cc",
+      "gtk/Utils.cc",
+      "libtransmission/announcer.cc",
+      "libtransmission/peer-mgr-active-requests.cc",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/utils.cc",
+      "libtransmission/variant-json.cc",
+      "qt/DetailsDialog.cc",
+      "qt/FilterBar.cc",
+      "qt/FilterBarComboBox.cc",
+      "qt/FilterBarComboBoxDelegate.cc",
+      "qt/MainWindow.cc",
+      "qt/TorrentModel.cc",
+      "tests/libtransmission/copy-test.cc",
+      "tests/libtransmission/makemeta-test.cc",
+      "tests/libtransmission/move-test.cc",
+      "tests/libtransmission/test-fixtures.h",
+      "tests/libtransmission/utils-test.cc",
+      "tests/libtransmission/web-utils-test.cc",
+      "utils/edit.cc",
+      "utils/remote.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-1cc9da2",
+    "buggy_commit": "46cc95f72e71cebca660781d8f498287b4cb2bfd",
+    "golden_commit": "1cc9da26ba4c40c8f8d228b70c5d4c9c6b61eb77",
+    "message": "fix: sonarcloud (#2865)",
+    "files": [
+      "gtk/Application.cc",
+      "gtk/FaviconCache.cc",
+      "libtransmission/announcer-udp.cc",
+      "libtransmission/blocklist.cc",
+      "libtransmission/handshake.cc",
+      "libtransmission/log.cc",
+      "libtransmission/magnet-metainfo.h",
+      "libtransmission/peer-io.cc",
+      "libtransmission/peer-io.h",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/session.cc",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "libtransmission/trevent.h",
+      "qt/FileTreeItem.cc",
+      "qt/FileTreeItem.h",
+      "qt/InteropHelper.cc",
+      "qt/Prefs.cc",
+      "qt/Torrent.cc",
+      "tests/libtransmission/announce-list-test.cc",
+      "tests/libtransmission/announcer-test.cc",
+      "tests/libtransmission/assets/alice_in_wonderland_librivox_archive.torrent",
+      "tests/libtransmission/assets/debian-11.2.0-amd64-DVD-1.iso.torrent.added",
+      "tests/libtransmission/bitfield-test.cc",
+      "tests/libtransmission/block-info-test.cc",
+      "tests/libtransmission/completion-test.cc",
+      "tests/libtransmission/file-piece-map-test.cc",
+      "tests/libtransmission/history-test.cc",
+      "tests/libtransmission/json-test.cc",
+      "tests/libtransmission/magnet-metainfo-test.cc",
+      "tests/libtransmission/peer-mgr-active-requests-test.cc",
+      "tests/libtransmission/peer-mgr-wishlist-test.cc",
+      "tests/libtransmission/rename-test.cc",
+      "tests/libtransmission/rpc-test.cc",
+      "tests/libtransmission/session-test.cc",
+      "tests/libtransmission/strbuf-test.cc",
+      "tests/libtransmission/test-fixtures.h",
+      "tests/libtransmission/torrent-metainfo-test.cc",
+      "tests/libtransmission/utils-test.cc",
+      "utils/remote.cc",
+      "utils/show.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-a250690",
+    "buggy_commit": "6da591fe5780ad1456bcca363cdfedd093193895",
+    "golden_commit": "a250690f30b36a509b969d8785708380f7dbda3f",
+    "message": "fix: sonarcloud (#2860)",
+    "files": [
+      "cli/cli.cc",
+      "gtk/Application.cc",
+      "gtk/DetailsDialog.cc",
+      "gtk/FreeSpaceLabel.cc",
+      "gtk/FreeSpaceLabel.h",
+      "gtk/IconCache.cc",
+      "gtk/MainWindow.cc",
+      "gtk/Prefs.cc",
+      "gtk/Prefs.h",
+      "gtk/PrefsDialog.cc",
+      "gtk/Session.cc",
+      "gtk/Utils.cc",
+      "qt/DetailsDialog.cc",
+      "qt/FileTreeModel.cc",
+      "qt/TorrentModel.cc",
+      "tests/libtransmission/crypto-test.cc",
+      "tests/libtransmission/test-fixtures.h"
+    ]
+  },
+  {
+    "task_id": "transmission-6e91136",
+    "buggy_commit": "d943f069f5f40155e6adb3f9577114f38e2759ce",
+    "golden_commit": "6e91136b53ff8acd6055e85bc0341e350f6b7111",
+    "message": "fix: three asan issues (#2851)",
+    "files": [
+      "libtransmission/magnet-metainfo.cc",
+      "tests/libtransmission/completion-test.cc",
+      "tests/libtransmission/torrents-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-4dd25d8",
+    "buggy_commit": "66638cc80cc1f45c5c3614b46f97d048bb30393e",
+    "golden_commit": "4dd25d81121235f6088ae96904a57cabea9ca116",
+    "message": "fix: tr_strbuf move op loses zero-termination (#2843)",
+    "files": [
+      "libtransmission/tr-strbuf.h",
+      "tests/libtransmission/strbuf-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-9c3acc7",
+    "buggy_commit": "798022ac77b5f5efa2e6d70393a8f1a936e598f8",
+    "golden_commit": "9c3acc7e8aa2d67e16790871ae00413e7932d1b3",
+    "message": "fixup: handle unhandled scrape/announce responses (#2701)",
+    "files": [
+      "libtransmission/announcer-common.h",
+      "libtransmission/announcer-http.cc",
+      "libtransmission/announcer.cc",
+      "libtransmission/net.cc",
+      "libtransmission/net.h",
+      "libtransmission/session.h",
+      "tests/libtransmission/announcer-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-13ad2b5",
+    "buggy_commit": "f7d74095ed8e9d209489cc5bc87a982e80fb3614",
+    "golden_commit": "13ad2b58dcb4b4c3e1af446dfe28c843e02b1827",
+    "message": "refactor: always use a blocksize of 16 KB (#2694)",
+    "files": [
+      "libtransmission/block-info.cc",
+      "libtransmission/block-info.h",
+      "libtransmission/completion.cc",
+      "libtransmission/inout.cc",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/torrent-metainfo.h",
+      "libtransmission/torrent.h",
+      "tests/libtransmission/block-info-test.cc",
+      "tests/libtransmission/completion-test.cc",
+      "tests/libtransmission/file-piece-map-test.cc",
+      "tests/libtransmission/move-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-318d60b",
+    "buggy_commit": "a92af9193e1acb9f6f7a75a2b06fa0d925eb9ea7",
+    "golden_commit": "318d60b72db870a263d2dbcf0fecd70107a3f439",
+    "message": "refactor: fix sonarcloud \"use enum class\" code smells (#2590)",
+    "files": [
+      "gtk/Application.cc",
+      "gtk/HigWorkarea.h",
+      "gtk/MainWindow.cc",
+      "gtk/MakeDialog.cc",
+      "gtk/PrefsDialog.h",
+      "gtk/StatsDialog.cc",
+      "gtk/TorrentCellRenderer.cc",
+      "gtk/Utils.cc",
+      "gtk/Utils.h",
+      "libtransmission/announce-list.h",
+      "libtransmission/makemeta.cc",
+      "libtransmission/makemeta.h",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/resume.cc",
+      "libtransmission/resume.h",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/torrent.cc",
+      "macosx/CreatorWindowController.mm",
+      "qt/Application.cc",
+      "qt/FileTreeItem.cc",
+      "qt/FileTreeItem.h",
+      "qt/FileTreeModel.cc",
+      "qt/MakeDialog.cc",
+      "tests/libtransmission/rename-test.cc",
+      "utils/create.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-6f9cba4",
+    "buggy_commit": "0929d1a0131102c91bfbb38b869aeec6c7817076",
+    "golden_commit": "6f9cba4088d5aaf29902e1b25ef0e0accd0a9829",
+    "message": "fixup! refactor: SAX-like benc parser pt. 1 (#2490) (#2544)",
+    "files": [
+      "libtransmission/benc.h",
+      "tests/libtransmission/benc-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-8d75736",
+    "buggy_commit": "aa2183c9c5d25f6f06da31015e8c28243642b797",
+    "golden_commit": "8d75736ad1b2c92f1cca04a24b60b8b226af96c8",
+    "message": "fix: empty torrent filename (#2435)",
+    "files": [
+      "libtransmission/resume.cc",
+      "libtransmission/torrent-ctor.cc",
+      "libtransmission/torrent-magnet.cc",
+      "libtransmission/torrent-metainfo.h",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "libtransmission/transmission.h",
+      "libtransmission/utils.cc",
+      "macosx/Torrent.mm",
+      "tests/libtransmission/rename-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-2c09e99",
+    "buggy_commit": "be1e46383df3abdb07d892b48f81fd8d0dc2c3b8",
+    "golden_commit": "2c09e99515b5b02f2220354f7d818ddd4eb052cd",
+    "message": "fix: parse utorrent peer-id version components as hex (#2411)",
+    "files": [
+      "libtransmission/clients.cc",
+      "tests/libtransmission/clients-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-41b2a80",
+    "buggy_commit": "b0ee4007ffee27b9fdcc685e377865dc6e8555c8",
+    "golden_commit": "41b2a802cfac2c0131a5b5fb564b6c86d6e874a2",
+    "message": "Fix another integer overflow bug on 32-bit platforms with torrents > 4GB (#2391)",
+    "files": [
+      "libtransmission/completion.cc",
+      "tests/libtransmission/completion-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-43b9d5c",
+    "buggy_commit": "d2e840c64cfd99f72e0b2d15bd8e9edadbf939a9",
+    "golden_commit": "43b9d5c147b3ef7587018904cb83dfb832c66b02",
+    "message": "fix: potential infinite loop when parsing benc (#2389)",
+    "files": [
+      "libtransmission/variant-benc.cc",
+      "tests/libtransmission/variant-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-0e321c2",
+    "buggy_commit": "b62b8f28bf129810d767bc76502223201048b654",
+    "golden_commit": "0e321c2d216bfc6e3994eae6c798eb7e1ec60b82",
+    "message": "fix: clang warnings (#2339)",
+    "files": [
+      "libtransmission/crypto.cc",
+      "libtransmission/crypto.h",
+      "libtransmission/interned-string.h",
+      "libtransmission/peer-io.cc",
+      "libtransmission/peer-io.h",
+      "tests/libtransmission/crypto-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-e2be142",
+    "buggy_commit": "1bc10e3706a0c8c71f360fc3674bd662f8255118",
+    "golden_commit": "e2be142ad643e583f222e14e5b9203af943468c5",
+    "message": "fix: new warnings (#2270)",
+    "files": [
+      "libtransmission/block-info.h",
+      "libtransmission/torrent.h",
+      "libtransmission/tr-utp.cc",
+      "libtransmission/utils.cc",
+      "libtransmission/variant.cc",
+      "tests/libtransmission/metainfo-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-dbd9130",
+    "buggy_commit": "d4e0f368c8c0ce7bc13d79a234cf398d7c85b1e2",
+    "golden_commit": "dbd9130d9df3b2b0ebf4e7e003fc0e1f0f8d9263",
+    "message": "fix: env var leak in tr_spawn_async() (#2212)",
+    "files": [
+      "libtransmission/subprocess-posix.cc",
+      "libtransmission/subprocess-win32.cc",
+      "libtransmission/subprocess.h",
+      "libtransmission/torrent.cc",
+      "tests/libtransmission/subprocess-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-ec94c90",
+    "buggy_commit": "1ba81938bf93512f8644cf38acaae8d9574f4851",
+    "golden_commit": "ec94c90da9ba1c5a1c58453e55d38e54a5dc6d04",
+    "message": "fix: coverity warnings (#2186)",
+    "files": [
+      "gtk/Prefs.cc",
+      "libtransmission/rpc-server.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/session.cc",
+      "tests/libtransmission/metainfo-test.cc",
+      "tests/libtransmission/subprocess-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-60b802a",
+    "buggy_commit": "0fba4769170b9b4aa894e7f13dfd257534eb95b6",
+    "golden_commit": "60b802a22b7eaddea2412d5098cbd0d52c25ef7b",
+    "message": "refactor: fix some msvc compiler warnings (#2185)",
+    "files": [
+      "libtransmission/announcer.cc",
+      "libtransmission/utils.cc",
+      "tests/libtransmission/rename-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-af8e9e6",
+    "buggy_commit": "8980a33f4a46e036a8e00979f9a05a9759be13b9",
+    "golden_commit": "af8e9e66b9ba0e0504d140712a10777d40f8befe",
+    "message": "fixup! refactor: rpc-server.cc (#2152) (#2164)",
+    "files": [
+      "libtransmission/crypto-utils.cc",
+      "libtransmission/crypto-utils.h",
+      "libtransmission/rpc-server.cc",
+      "libtransmission/rpc-server.h",
+      "libtransmission/transmission.h",
+      "tests/libtransmission/session-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-af4a953",
+    "buggy_commit": "2bd328c0826a0ed1c6c21ea2514ee78ba569235a",
+    "golden_commit": "af4a953cd1556f9d6fc1dd799b16a9d2d43a9a7e",
+    "message": "fixup! refactor: remove tr_piece struct (#2059) (#2115)",
+    "files": [
+      "libtransmission/bitfield.cc",
+      "libtransmission/bitfield.h",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/resume.cc",
+      "tests/libtransmission/bitfield-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-3008a99",
+    "buggy_commit": "62c92227e3e30e25d37f18195cc8c08562939026",
+    "golden_commit": "3008a992ca4c9cf138d482a7c3cb0706e062d277",
+    "message": "fix: Bitfield.getRaw() regression (#2023)",
+    "files": [
+      "libtransmission/bitfield.cc",
+      "libtransmission/bitfield.h",
+      "libtransmission/completion.cc",
+      "libtransmission/completion.h",
+      "libtransmission/peer-common.h",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/resume.cc",
+      "libtransmission/session.cc",
+      "libtransmission/session.h",
+      "libtransmission/span.h",
+      "libtransmission/torrent.cc",
+      "libtransmission/webseed.cc",
+      "tests/libtransmission/bitfield-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-94ee81f",
+    "buggy_commit": "0c39924074a83dfb09343e34423e1908d54abd2a",
+    "golden_commit": "94ee81f98d8bd08ecd8bc292fb6661d896f4089a",
+    "message": "fixup! refactor: add tr_peer_id_t (#2004) (#2016)",
+    "files": [
+      "libtransmission/clients.cc",
+      "libtransmission/clients.h",
+      "libtransmission/handshake.cc",
+      "libtransmission/peer-mgr.cc",
+      "tests/libtransmission/clients-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-4aba9b6",
+    "buggy_commit": "de7b7a284ce75f77c6af509c6827680ca8b5b970",
+    "golden_commit": "4aba9b623f1eda0a24cc8ab11efa7fc02b5acbd9",
+    "message": "fix: assertion failure in bitfield::bitfield(flags, n) (#1976)",
+    "files": [
+      "libtransmission/bitfield.cc",
+      "tests/libtransmission/bitfield-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-953f073",
+    "buggy_commit": "43ad1346eb5fa0a9a3f3479ff0bd8fa44c684f83",
+    "golden_commit": "953f07375aae3a0d46231ce02f2c9b0588cf72f4",
+    "message": "Modernize bitfield.cc: Storage changes and refactor (#1927)",
+    "files": [
+      "libtransmission/bitfield.cc",
+      "libtransmission/bitfield.h",
+      "libtransmission/completion.cc",
+      "libtransmission/completion.h",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/resume.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/session.cc",
+      "libtransmission/span.h",
+      "libtransmission/torrent.h",
+      "libtransmission/tr-assert.h",
+      "libtransmission/transmission.h",
+      "libtransmission/utils.cc",
+      "libtransmission/webseed.cc",
+      "tests/libtransmission/bitfield-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-fb39c46",
+    "buggy_commit": "23d85458f83d979475e5ed0db4446aee04f7e590",
+    "golden_commit": "fb39c4663c9e6b7fadc7cd55bdcfa04167ae53f1",
+    "message": "Fix/benc zero length dict key (#1964)",
+    "files": [
+      "libtransmission/variant-benc.cc",
+      "tests/libtransmission/CMakeLists.txt",
+      "tests/libtransmission/assets/Android-x86 8.1 r6 iso.torrent",
+      "tests/libtransmission/metainfo-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-312d182",
+    "buggy_commit": "6aba12888acf34b84faa6661a627ac751f352f51",
+    "golden_commit": "312d18281dbec9eb5e64a94fca946a1a5fc0d69d",
+    "message": "C++ modernize: Replace MIN/MAX with type safe std::min/std::max (#1806)",
+    "files": [
+      "daemon/daemon-win32.c",
+      "libtransmission/announcer.cc",
+      "libtransmission/bandwidth.cc",
+      "libtransmission/bitfield.cc",
+      "libtransmission/fdlimit.cc",
+      "libtransmission/file-posix.cc",
+      "libtransmission/file.cc",
+      "libtransmission/inout.cc",
+      "libtransmission/makemeta.cc",
+      "libtransmission/peer-io.cc",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/port-forwarding.cc",
+      "libtransmission/ptrarray.cc",
+      "libtransmission/quark.cc",
+      "libtransmission/resume.cc",
+      "libtransmission/rpc-server.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/session.cc",
+      "libtransmission/subprocess-win32.cc",
+      "libtransmission/torrent.cc",
+      "libtransmission/tr-dht.cc",
+      "libtransmission/tr-getopt.cc",
+      "libtransmission/tr-lpd.cc",
+      "libtransmission/tr-macros.h",
+      "libtransmission/utils.cc",
+      "libtransmission/verify.cc",
+      "libtransmission/web.cc",
+      "libtransmission/webseed.cc",
+      "tests/libtransmission/copy-test.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-43d1ece",
+    "buggy_commit": "098c7508e37483d6ac0d413d90331ff4a2ead092",
+    "golden_commit": "43d1ece5629b50e6cad3c224fb4eca6a20510951",
+    "message": "C++ modernization: Replace NULLs with typesafe nullptrs (#1799)",
+    "files": [
+      "libtransmission/announcer-http.cc",
+      "libtransmission/announcer-udp.cc",
+      "libtransmission/announcer.cc",
+      "libtransmission/bandwidth.cc",
+      "libtransmission/bandwidth.h",
+      "libtransmission/bitfield.cc",
+      "libtransmission/blocklist.cc",
+      "libtransmission/cache.cc",
+      "libtransmission/clients.cc",
+      "libtransmission/crypto-utils-cyassl.cc",
+      "libtransmission/crypto-utils-fallback.cc",
+      "libtransmission/crypto-utils-openssl.cc",
+      "libtransmission/crypto-utils-polarssl.cc",
+      "libtransmission/crypto-utils.cc",
+      "libtransmission/crypto.cc",
+      "libtransmission/error.cc",
+      "libtransmission/fdlimit.cc",
+      "libtransmission/file-posix.cc",
+      "libtransmission/file-win32.cc",
+      "libtransmission/file.cc",
+      "libtransmission/file.h",
+      "libtransmission/handshake.cc",
+      "libtransmission/inout.cc",
+      "libtransmission/jsonsl.h",
+      "libtransmission/list.cc",
+      "libtransmission/log.cc",
+      "libtransmission/magnet.cc",
+      "libtransmission/makemeta.cc",
+      "libtransmission/metainfo.cc",
+      "libtransmission/natpmp.cc",
+      "libtransmission/net.cc",
+      "libtransmission/net.h",
+      "libtransmission/peer-io.cc",
+      "libtransmission/peer-io.h",
+      "libtransmission/peer-mgr.cc",
+      "libtransmission/peer-msgs.cc",
+      "libtransmission/platform-quota.cc",
+      "libtransmission/platform.cc",
+      "libtransmission/port-forwarding.cc",
+      "libtransmission/ptrarray.cc",
+      "libtransmission/ptrarray.h",
+      "libtransmission/quark.cc",
+      "libtransmission/resume.cc",
+      "libtransmission/rpc-server.cc",
+      "libtransmission/rpcimpl.cc",
+      "libtransmission/session-id.cc",
+      "libtransmission/session.cc",
+      "libtransmission/session.h",
+      "libtransmission/stats.cc",
+      "libtransmission/subprocess-posix.cc",
+      "libtransmission/subprocess-win32.cc",
+      "libtransmission/torrent-ctor.cc",
+      "libtransmission/torrent-magnet.cc",
+      "libtransmission/torrent.cc",
+      "libtransmission/torrent.h",
+      "libtransmission/tr-dht.cc",
+      "libtransmission/tr-getopt.cc",
+      "libtransmission/tr-lpd.cc",
+      "libtransmission/tr-udp.cc",
+      "libtransmission/tr-utp.cc",
+      "libtransmission/trevent.cc",
+      "libtransmission/upnp.cc",
+      "libtransmission/utils.cc",
+      "libtransmission/variant-benc.cc",
+      "libtransmission/variant-json.cc",
+      "libtransmission/variant.cc",
+      "libtransmission/verify.cc",
+      "libtransmission/watchdir-generic.cc",
+      "libtransmission/watchdir-inotify.cc",
+      "libtransmission/watchdir-kqueue.cc",
+      "libtransmission/watchdir-win32.cc",
+      "libtransmission/watchdir.cc",
+      "libtransmission/web.cc",
+      "libtransmission/webseed.cc",
+      "tests/libtransmission/subprocess-test-program.cc"
+    ]
+  },
+  {
+    "task_id": "transmission-a459e5e",
+    "buggy_commit": "97a6f1232ed8759f05db9d82d2b2c246d5c23811",
+    "golden_commit": "a459e5e11b2d2524b649f7487368de30c8d2af21",
+    "message": "Switch to a standalone ARC4 implementation (#1788)",
+    "files": [
+      ".gitmodules",
+      "CMakeLists.txt",
+      "Transmission.xcodeproj/project.pbxproj",
+      "libtransmission/CMakeLists.txt",
+      "libtransmission/crypto-utils-cyassl.c",
+      "libtransmission/crypto-utils-openssl.c",
+      "libtransmission/crypto-utils-polarssl.c",
+      "libtransmission/crypto-utils.c",
+      "libtransmission/crypto-utils.h",
+      "libtransmission/crypto.c",
+      "libtransmission/crypto.h",
+      "tests/libtransmission/crypto-test-ref.h",
+      "third-party/arc4"
+    ]
+  },
+  {
+    "task_id": "transmission-0155252",
+    "buggy_commit": "af3a4d45578dc8511fd2f26636ae727a728b65e0",
+    "golden_commit": "0155252823d71576f2d1bdcbc301d2e6006cf7f5",
+    "message": "Add in-kernel file copying for several platforms. (#1092)",
+    "files": [
+      "CMakeLists.txt",
+      "libtransmission/file-posix.c",
+      "libtransmission/file-win32.c",
+      "libtransmission/file.h",
+      "libtransmission/utils.c",
+      "tests/libtransmission/CMakeLists.txt",
+      "tests/libtransmission/copy-test.cc"
+    ]
+  }
+]

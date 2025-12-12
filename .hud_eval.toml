@@ -1,0 +1,40 @@
+# HUD Eval Configuration
+# Command-line arguments override these settings
+
+[eval]
+# source = "transmission_benchmark.json"
+# agent = "claude"
+# model = ""
+# full = false
+# max_concurrent = 10
+max_steps = 150
+# group_size = 1
+# task_ids = ["task_1", "task_2"]
+# verbose = true
+# very_verbose = true
+# auto_respond = true
+
+[agent]
+# allowed_tools = ["computer", "playwright"]
+# disallowed_tools = []
+
+[claude]
+# max_tokens = 16384
+# use_computer_beta = true
+
+[openai]
+# temperature = 0.7
+# max_output_tokens = 4096
+
+[gemini]
+# temperature = 1.0
+# top_p = 0.95
+
+[gemini_cua]
+# temperature = 1.0
+# top_p = 0.95
+# excluded_predefined_functions = []
+
+[openai_compatible]
+# base_url = "http://localhost:8000/v1"
+# model_name = "my-model"
