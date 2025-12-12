@@ -190,7 +190,7 @@ RUN mkdir -p /evaluation/secure_git && \
 RUN find /home/ubuntu/repo -name ".git" -type d -exec rm -rf {} + 2>/dev/null || true && \
     find /home/ubuntu/repo -name ".git" -type f -delete 2>/dev/null || true
 
-RUN chown -R ubuntu:ubuntu /home/ubuntu/repo &&
+RUN chown -R ubuntu:ubuntu /home/ubuntu/repo
 
 ENV SECURE_GIT_DIR=/evaluation/secure_git/repo.git
 ENV REPO_PATH=/home/ubuntu/repo
