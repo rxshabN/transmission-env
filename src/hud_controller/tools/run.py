@@ -28,7 +28,7 @@ def demote():
 
 async def run(
     cmd: str,
-    timeout: float | None = 120.0,  # seconds # noqa: ASYNC109
+    timeout: float | None = 3600.0,  # seconds # noqa: ASYNC109
     truncate_after: int | None = MAX_RESPONSE_LEN,
     preexec_fn=demote,
 ):

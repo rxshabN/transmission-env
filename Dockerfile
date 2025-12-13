@@ -196,6 +196,7 @@ ENV SECURE_GIT_DIR=/evaluation/secure_git/repo.git
 ENV REPO_PATH=/home/ubuntu/repo
 ENV HOME=/home/ubuntu
 ENV MCP_TESTING_MODE=1
+ENV HUD_CLIENT_TIMEOUT=3600
 
 WORKDIR /home/ubuntu
 

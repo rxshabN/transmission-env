@@ -29,10 +29,10 @@ The following files need to be fixed:
 6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
 7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.
 
-### 🛑 CRITICAL RULES - READ THESE CAREFULLY BEFORE BEGINNING 🛑
+### 🛑 CRITICAL INSTRUCTIONS - READ THESE CAREFULLY BEFORE BEGINNING 🛑
 
 ### 1. ONE SHOT SUBMISSION
-* **You can only call `evaluate_tool()` ONCE.**
+* **You can only call `evaluate()` ONCE at the end of your coding session.**
 * This is your final submission.
 * **Do not** use the `grade_problem` to debug. Use local tools (`ninja`, `ctest`) instead.
 

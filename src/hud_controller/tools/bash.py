@@ -44,7 +44,7 @@ class _BashSession:
 
     command: str = "/bin/bash"
     _output_delay: float = 0.2  # seconds
-    _timeout: float = 1500.0  # seconds (25 minutes)
+    _timeout: float = 3600.0  # seconds (25 minutes)
     _sentinel: str = "<<exit>>"
 
     def __init__(self):
