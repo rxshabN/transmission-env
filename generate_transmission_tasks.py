@@ -52,11 +52,15 @@ Instructions:
 2. Read the tests in /home/ubuntu/repo/tests/ to understand expected behavior.
 3. Modify the source files to fix the bug.
 4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run local verification commands:
+   - Go to build directory
+   - Compile: `ninja`
+   - Run Tests: `ctest`
+6. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULLY BEFORE BEGINNING):
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use `cmake`, `ninja`, and `ctest` via the bash tool to check your work before submitting.
 """
 
         task_code = f"""

@@ -22,12 +22,21 @@ The following files need to be fixed:
 3. Analyze the test files in `/home/ubuntu/repo/tests/` to understand expected behavior
 **Note:** The tests are the "Source of Truth". They have already been updated to reflect the desired behavior. Use them as your specification.
 4. Modify the source files to fix the bug
-5. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
- 6. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to verify your changes locally:
+   - Go to build directory
+   - Compile: `ninja`
+   - Run Tests: `ctest`
+6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
+7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.
 
 ### 🛑 CRITICAL RULES - READ THESE CAREFULLY BEFORE BEGINNING 🛑
 
-#### 1. SECURITY & SCOPE
+### 1. ONE SHOT SUBMISSION
+* **You can only call `evaluate_tool()` ONCE.**
+* This is your final submission.
+* **Do not** use the `grade_problem` to debug. Use local tools (`ninja`, `ctest`) instead.
+
+#### 2. SECURITY & SCOPE
 * **ONLY** modify the source files listed above.
 * **DO NOT** touch `CMakeLists.txt`, hidden `.git` directories, or build scripts.
 
