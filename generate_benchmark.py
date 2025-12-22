@@ -20,7 +20,6 @@ The following files need to be fixed:
 1. Read and understand the bug description above
 2. Examine the relevant source files in `/home/ubuntu/repo/`
 3. Analyze the test files in `/home/ubuntu/repo/tests/` to understand expected behavior
-**Note:** The tests are the "Source of Truth". They have already been updated to reflect the desired behavior. Use them as your specification.
 4. Modify the source files to fix the bug
 5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to verify your changes locally:
    - Go to build directory
@@ -86,7 +85,7 @@ def main():
                         "-i", 
                         "--network", "none",
                         "-v", f"{cwd}/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
-                        "swe-bench-rl-env:0.1.0"
+                        "transmission-env:0.1.0"
                     ]
                 }
             }
